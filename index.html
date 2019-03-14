@@ -5,62 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>Personal Portfolio</title>
-    <style>
-         .vic-navbar {
-            position: absolute;
-            float: right;
-            
-         }
-    
-        .container-fluid{
-            width: auto; 
-            margin-left: 100%; 
-        }
-        .vic-navbar-right{
-            overflow: hidden;
-            background-color: #333;
-        }
-        .vic-navbar-right a{
-            float: right;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;  
-        }
-        .vic-navbar-right a:hover {
-            background-color: #ddd;
-            color:black;
-        }
-        
-    </style>   
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Personal Portfolio</title>   
 </head>
+<style>
+    
+</style>
 
 <body>
-    <header>
     <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="">
-                    <i class="glyphicon glyphicon-road"></i>
-                    <span class="text-title">Victor Carranza</span>
-                </a>
-                <li role="presentation" class="active">
-                    <a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact Me</a></li>
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="">
+                        <i class="glyphicon glyphicon-road"></i>
+                        <span class="text-title">Victor Carranza</span>
+                    </a>
+                    <button class="navbar-toggle navbar-collapsed" data-target="#navcol-1" data-toggle="collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <Div id="navcol-1" class="collapse navbar-collapse"></Div>
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li class="active"><a href="#">About Me<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+        </nav>
     
-    <div class="row" id="row">
-        <div class="well">
+    
+    <div class="jumbotron text-center">
             <h1>Victor Carranza</h1>
-            <p>An Aspiring Front End Developer</p>
-        </div>
-    </div>
+            <p>An Aspiring Junior Front End Developer</p> 
+          </div>
+            
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>Race Hard</h3>
+                <p>Being outdoors and running in nature are few of my hobbies.</p>
+                <p>Traveling When possible is good</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>Lorem</h3>        
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+                <h2>Carousel Example</h2>  
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="geek-vic.jpg" alt="geek-vic" style="width:100%;">
+                    </div>
+              
+                    <div class="item">
+                      <img src="san jose 2017.jpg" alt="san jose 2017" style="width:100%;">
+                    </div>
+                  
+                    <div class="item">
+                      <img src="wfb.jpg" alt="wfb" style="width:100%;">
+                    </div>
+                  </div>
+              
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
     
 </body>
 </html>
