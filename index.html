@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/personal/portfolio/css/Projects-Horizontal.css">
   </head>
   
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--start of nav-->
     <nav class="navbar navbar-default">
       <div class="container">
@@ -28,15 +28,15 @@
             </div>
         <div class="collapse navbar-collapse" id="navcol-1">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active" role="presentation"><a href="#">About Me&nbsp;</a></li>
-            <li role="presentation"><a href="#">Projects</a></li>
-            <li role="presentation"><a href="#">Contact Me</a></li>
+            <li class="active" role="presentation"><a href="#about me">About Me&nbsp;</a></li>
+            <li role="presentation"><a href="#projects">Projects</a></li>
+            <li role="presentation"><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!--end of nav-->
-    <div class="jumbotron hero">
+    <div id="about me"class="jumbotron hero">
       <div class="container">
         <div class="row">
           <div class="col-md-9 col-md-offset-3 col-md-pull-3 get-it">
@@ -47,14 +47,7 @@
       </div>
     </div>
     <!--end of jumbotron-->
-    <section class="testimonials">
-      <h2 class="text-center">People Love It!</h2>
-      <blockquote>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer>Famous tech website</footer>
-      </blockquote>
-    </section>
-    <div class="projects-horizontal">
+    <div id="projects"class="projects-horizontal">
       <div class="container">
         <div class="intro">
           <h2 class="text-center">Javascript Project </h2>
@@ -64,9 +57,9 @@
         <div class="row projects">
           <div class="col-sm-6 item">
             <div class="row">
-              <div class="col-md-5"><a href="#"><img class="img-responsive" src="/personal/portfolio/img/desk.jpg"></a></div>
+              <div class="col-md-5"><a href="#"><img class="img-responsive" src="/personal/portfolio/img/form-page.jpg"></a></div>
               <div class="col-md-7">
-                <h3 class="name">559 Resource</h3>
+                <h3 class="name">The 559 Resource</h3>
                 <p class="description">Collaboration with my classmates to create local information center using HTML, CSS, Javascript concepts to help students find local educational resources based on interests</p>
               </div>
             </div>
@@ -105,22 +98,22 @@
       </div>
     </div>
     <!--end of projects-->
-    <div class="footer-basic">
+    <div id="contact"class="footer-basic">
       <footer>
+        <div class="Contact">
+          <h3>Contact Me</h3>
         <div class="social">
-          <a href="#">
+          <a href="https://github.com/vcarranza">
+            <i class="icon ion-social-github"></i>
+          </a>
+          <a href="https://www.instagram.com/vic_does_ocr/">
             <i class="icon ion-social-instagram"></i>
           </a>
-          <a href="#">
-            <i class="icon ion-social-snapchat"></i>
-          </a>
-          <a href="#">
-            <i class="icon ion-social-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="icon ion-social-facebook"></i>
+          <a href="https://www.linkedin.com/in/victor-carranza-b9121b111/">
+            <i class="icon ion-social-linkedin"></i>
           </a>
         </div>
+      </div>
         <ul class="list-inline">
           <li><a href="#">Home</a></li>
           <li><a href="#">Services</a></li>
@@ -132,7 +125,7 @@
       </footer>
       <!--end of footer-->
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/personal/portfolio/js/jquery.min.js"></script>
+    <script src="/personal/portfolio/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
